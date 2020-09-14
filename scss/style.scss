@@ -1,0 +1,95 @@
+@import "./variabal";
+@import "./uitils";
+@import "./mixing";
+
+.body-container {
+  background-color: $overlay;
+  height: 100vh;
+  .container {
+    width: 80%;
+    margin: 0 auto;
+
+    .heading-text {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+// Count
+
+.count {
+  @include flex();
+  li {
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 1.4rem;
+    background: $countBg;
+    color: $countText;
+    box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.41);
+  }
+  .number {
+    display: block;
+    padding: 40px 0;
+    border-bottom: 3px solid $countBorder;
+    font-size: 3rem;
+  }
+  .name {
+    padding: 10px 0px;
+    display: block;
+    text-transform: capitalize;
+  }
+
+  #days {
+    color: $day;
+  }
+  #hours {
+    color: $hours;
+  }
+  #minutes {
+    color: $min;
+  }
+  #seconds {
+    color: $sec;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+// nav
+header {
+  nav {
+    .logo {
+      font-size: 1.3rem;
+    }
+    @include flex();
+    justify-content: space-between;
+    ul {
+      @include flex();
+      li {
+        margin-right: 20px;
+        i {
+          font-size: 1.2rem;
+        }
+        .fa-youtube {
+          color: #ff0000;
+        }
+        i.fa-facebook-square {
+          color: #4267b2;
+        }
+        i.fab.fa-twitter {
+          color: #1a91da;
+        }
+
+        i.fab.fa-linkedin {
+          color: #0077b5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: $font;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: unset;
+}
+
+// middle
+.middle {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
