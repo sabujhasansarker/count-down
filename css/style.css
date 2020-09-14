@@ -1,12 +1,11 @@
-@import url(https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,200;0,300;0,400;1,500&display=swap);
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 body {
   margin: 0;
   padding: 0;
   background: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: "Grandstander", cursive;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
 
@@ -46,6 +45,9 @@ li {
   font-size: 1.4rem;
   background: white;
   color: black;
+  -webkit-box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.41);
 }
 li .number {
   display: block;
@@ -71,4 +73,21 @@ li .name {
 }
 #seconds {
   color: whitesmoke;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+p {
+  font-size: 1rem;
+}
+
+.text-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
