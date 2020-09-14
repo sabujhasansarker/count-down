@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,200;0,300;0,400;1,500&display=swap);
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Grandstander", cursive;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+
+.body-container {
+  background-color: #505250b5;
+  height: 100vh;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  margin-right: 30px;
+  text-align: center;
+  border-radius: 5px;
+  width: 150px;
+  font-size: 1.4rem;
+  background: white;
+  color: black;
+}
+li .number {
+  display: block;
+  padding: 40px 0;
+  border-bottom: 3px solid whitesmoke;
+  font-size: 3rem;
+}
+
+li .name {
+  padding: 10px 0px;
+  display: block;
+  text-transform: capitalize;
+}
+
+#days {
+  color: red;
+}
+#hours {
+  color: green;
+}
+#minutes {
+  color: aquamarine;
+}
+#seconds {
+  color: whitesmoke;
+}
