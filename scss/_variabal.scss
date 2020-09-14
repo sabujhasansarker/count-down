@@ -1,4 +1,4 @@
-$overlay: #505250b5;
+$overlay: #00000052;
 $countBg: white;
 $countBorder: whitesmoke;
 $countText: black;
@@ -9,3 +9,10 @@ $sec: whitesmoke;
 
 // font
 $font: "Poppins", sans-serif;
+
+:root {
+  --gunmetal-85: hsla(212, 14%, 85%, 1);
+  --gunmetal-75: hsla(212, 14%, 75%, 1);
+  --sky-blue-75: hsla(201, 80%, 75%, 1);
+  --sky-blue-60: hsla(201, 80%, 60%, 1);
+}

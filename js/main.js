@@ -25,3 +25,13 @@ let countDown = new Date("Sep 30, 2020 00:00:00").getTime(),
     //  'IT'S MY BIRTHDAY!;
     //}
   }, second);
+
+var themeSwitch = document.getElementById("toggle-checkbox");
+
+themeSwitch.addEventListener("click", (e) => {
+  if (themeSwitch.checked) {
+    console.log("on");
+  } else {
+    console.log("off");
+  }
+});
