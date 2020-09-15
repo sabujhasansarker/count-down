@@ -2,6 +2,7 @@ function loader(_success) {
   var obj = getElement(".preloader"),
     inner = getElement(".preloader_inner"),
     bodyContainer = getElement(".body-container");
+  // obj.classList.add("show");
   var w = 0,
     t = setInterval(function () {
       w = w + 1;
@@ -20,4 +21,6 @@ function loader(_success) {
     }, 20);
 }
 
-loader();
+window.addEventListener("load", () => {
+  loader();
+});

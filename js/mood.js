@@ -2,6 +2,9 @@ var themeSwitch = getElement("#toggle-checkbox");
 
 const moodChanger = (mood) => {
   if (mood === "night") {
+    getElement(".body-container").style.backgroundImage = `url(
+      "https://bit.ly/32sX6eB"
+    )`;
     setProperty("--overlay", "#00000052");
     setProperty("--countBg", "#24272adb");
     setProperty("--countBorder", " #1b1b1b87");
@@ -10,9 +13,20 @@ const moodChanger = (mood) => {
     setProperty("--min", "aquamarine");
     setProperty("--sec", "whitesmoke");
     setProperty("--color", "white");
+    setProperty("--bg", "white");
   } else {
-    setProperty("--overlay", "#ffffff80");
-    setProperty("--countBg", "whitesmoke");
+    setProperty("--overlay", "#ffffff6b");
+    setProperty("--countBg", "#f5f5f580");
+    setProperty("--countBorder", " #1b1b1b87");
+    setProperty("--day", "red");
+    setProperty("--hours", "green");
+    setProperty("--min", "aquamarine");
+    setProperty("--sec", "whitesmoke");
+    setProperty("--color", "black");
+    setProperty("--bg", "white");
+    getElement(".body-container").style.backgroundImage = `url(
+      "https://bit.ly/35Bipg9"
+    )`;
   }
 };
 
