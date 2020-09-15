@@ -3,23 +3,28 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-let countDown = new Date("Sep 30, 2020 00:00:00").getTime(),
-  x = setInterval(function () {
-    let now = new Date().getTime(),
-      distance = countDown - now;
+const $ = (element) => document.querySelector(element);
+const li = document.querySelectorAll("ul li");
 
-    (getElement("#days").innerText = Math.floor(distance / day)),
-      (getElement("#hours").innerText = Math.floor((distance % day) / hour)),
-      (getElement("#minutes").innerText = Math.floor(
-        (distance % hour) / minute
-      )),
-      (getElement("#seconds").innerText = Math.floor(
-        (distance % minute) / second
-      ));
+let countDown = new Date("Dec 31, 2040 00:00:00").getTime();
 
-    //do something later when date is reached
-    //if (distance < 0) {
-    //  clearInterval(x);
-    //  'IT'S MY BIRTHDAY!;
-    //}
-  }, second);
+setInterval(function () {
+  let date = new Date();
+  let now = new Date().getTime();
+  let distance = countDown - now;
+  if (distance > 0) {
+    getElement("#days").innerHTML = Math.floor(distance / day);
+    getElement("#hours").innerHTML = Math.floor((distance % day) / hour);
+    getElement("#minutes").innerHTML = Math.floor((distance % hour) / minute);
+    getElement("#seconds").innerHTML = Math.floor((distance % minute) / second);
+  } else {
+    // for (let i = 0; i < li.length; i++) {
+    //   li[i].remove();
+    // }
+    // if (date.getMonth() == 7 && date.getDate() == 19) {
+    //   $("h1").innerHTML = "THis is My Birthday";
+    // } else {
+    //   $("h1").innerHTML = "Your Time is over";
+    // }
+  }
+}, second);
