@@ -158,10 +158,10 @@ header {
 .darkmode-toggle {
   &:focus-within {
     .toggle-slider {
-      box-shadow: 0 0 2px 4px var(--sky-blue-60);
+      box-shadow: 0 0 0px 0px var(--sky-blue-60);
     }
     input:checked + .toggle-slider {
-      box-shadow: 0 0 2px 4px var(--gunmetal-85);
+      box-shadow: 0 0 0px 0px var(--gunmetal-85);
     }
   }
   input {

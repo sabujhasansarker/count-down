@@ -13,10 +13,14 @@ setInterval(function () {
   let now = new Date().getTime();
   let distance = countDown - now;
   if (distance > 0) {
-    getElement("#days").innerHTML = Math.floor(distance / day);
-    getElement("#hours").innerHTML = Math.floor((distance % day) / hour);
-    getElement("#minutes").innerHTML = Math.floor((distance % hour) / minute);
-    getElement("#seconds").innerHTML = Math.floor((distance % minute) / second);
+    let d = Math.floor(distance / day);
+    let h = Math.floor((distance % day) / hour);
+    let m = Math.floor((distance % hour) / minute);
+    let s = Math.floor((distance % minute) / second);
+    getElement("#days").innerHTML = d < 10 ? `0${d}` : d;
+    getElement("#hours").innerHTML = h < 10 ? `0${h}` : h;
+    getElement("#minutes").innerHTML = m < 10 ? `0${m}` : m;
+    getElement("#seconds").innerHTML = s < 10 ? `0${s}` : s;
   } else {
     // for (let i = 0; i < li.length; i++) {
     //   li[i].remove();

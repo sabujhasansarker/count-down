@@ -3,7 +3,12 @@ var themeSwitch = getElement("#toggle-checkbox");
 const moodChanger = (mood) => {
   if (mood === "night") {
     setProperty("--overlay", "#00000052");
-    setProperty(" --countBg", "#24272adb");
+    setProperty("--countBg", "#24272adb");
+    setProperty("--countBorder", " #1b1b1b87");
+    setProperty("--day", "red");
+    setProperty("--hours", "green");
+    setProperty("--min", "aquamarine");
+    setProperty("--sec", "whitesmoke");
   } else {
     setProperty("--overlay", "#ffffff80");
     setProperty("--countBg", "whitesmoke");
