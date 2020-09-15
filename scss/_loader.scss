@@ -1,124 +1,42 @@
-.loader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  z-index: 99999;
-}
-/* The dot */
-.dot {
+.preloader {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-  width: 160px;
-  height: 100px;
-  margin-top: -50px;
-  margin-left: -80px;
-  border-radius: 5px;
-  background-color: #1e3f57;
-  transform-type: preserve-3d;
-  animation: dot1 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background: $bg;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 99999999999999;
+}
+.preloader_inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+  color: $color;
 }
 
-.dot:nth-child(2) {
-  z-index: 11;
-  width: 150px;
-  height: 90px;
-  margin-top: -45px;
-  margin-left: -75px;
-  border-radius: 3px;
-  background-color: #3c617d;
-  animation-name: dot2;
+.show {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: all 0.5s ease;
 }
 
-.dot:nth-child(3) {
-  z-index: 12;
-  width: 40px;
-  height: 20px;
-  margin-top: 50px;
-  margin-left: -20px;
-  border-radius: 0 0 5px 5px;
-  background-color: #6bb2cd;
-  animation-name: dot3;
-}
-
-@keyframes dot1 {
-  3%,
-  97% {
-    width: 160px;
-    height: 100px;
-    margin-top: -50px;
-    margin-left: -80px;
-  }
-  30%,
-  36% {
-    width: 80px;
-    height: 120px;
-    margin-top: -60px;
-    margin-left: -40px;
-  }
-  63%,
-  69% {
-    width: 40px;
-    height: 80px;
-    margin-top: -40px;
-    margin-left: -20px;
-  }
-}
-@keyframes dot2 {
-  3%,
-  97% {
-    width: 150px;
-    height: 90px;
-    margin-top: -45px;
-    margin-left: -75px;
-  }
-  30%,
-  36% {
-    width: 70px;
-    height: 96px;
-    margin-top: -48px;
-    margin-left: -35px;
-  }
-  63%,
-  69% {
-    width: 32px;
-    height: 60px;
-    margin-top: -30px;
-    margin-left: -16px;
-  }
-}
-@keyframes dot3 {
-  3%,
-  97% {
-    width: 40px;
-    height: 20px;
-    margin-top: 50px;
-    margin-left: -20px;
-  }
-  30%,
-  36% {
-    width: 8px;
-    height: 8px;
-    margin-top: 49px;
-    margin-left: -5px;
-    border-radius: 8px;
-  }
-  63%,
-  69% {
-    width: 16px;
-    height: 4px;
-    margin-top: -37px;
-    margin-left: -8px;
-    border-radius: 10px;
-  }
-}
-
-.loader.loader-headin {
-  width: 0;
+.hidden {
   display: none;
+  width: 0;
+  height: 0;
 }

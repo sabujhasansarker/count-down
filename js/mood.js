@@ -9,6 +9,7 @@ const moodChanger = (mood) => {
     setProperty("--hours", "green");
     setProperty("--min", "aquamarine");
     setProperty("--sec", "whitesmoke");
+    setProperty("--color", "white");
   } else {
     setProperty("--overlay", "#ffffff80");
     setProperty("--countBg", "whitesmoke");

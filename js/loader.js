@@ -1,9 +1,23 @@
-window.addEventListener("load", function () {
-  setTimeout(() => {
-    const preloader = document.querySelector(".loader");
-    console.log(preloader);
-    // const candyCrab = document.querySelector(".candy_crab");
-    preloader.classList.add("loader-headin");
-    // add(candyCrab, "candy-active");
-  }, 1000);
-});
+function loader(_success) {
+  var obj = getElement(".preloader"),
+    inner = getElement(".preloader_inner"),
+    bodyContainer = getElement(".body-container");
+  var w = 0,
+    t = setInterval(function () {
+      w = w + 1;
+      inner.textContent = w + "%";
+      bodyContainer.classList.add("hidden");
+
+      if (w === 100) {
+        obj.classList.remove("show");
+        bodyContainer.classList.remove("hidden");
+        clearInterval(t);
+        w = 0;
+        if (_success) {
+          return _success();
+        }
+      }
+    }, 20);
+}
+
+loader();

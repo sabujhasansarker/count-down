@@ -11,6 +11,9 @@
   --hours: green;
   --min: aquamarine;
   --sec: whitesmoke;
+
+  --bg: #1d1d1d;
+  --color: white;
 }
 
 $overlay: var(--overlay);
@@ -21,6 +24,9 @@ $day: var(--day);
 $hours: var(--hours);
 $min: var(--min);
 $sec: var(--sec);
+
+$bg: var(--bg);
+$color: var(--color);
 
 // font
 $font: "Poppins", sans-serif;

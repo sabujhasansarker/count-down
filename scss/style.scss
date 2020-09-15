@@ -3,9 +3,18 @@
 @import "./uitils";
 @import "./mixing";
 @import "./loader";
+
 .body-container {
-  background-color: $overlay;
-  height: 100vh;
+  background: url(https://bit.ly/32sX6eB);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 60%;
+  font-family: $font;
+  color: $color;
+  .overlay {
+    background-color: $overlay;
+    height: 100vh;
+  }
   @include tab() {
     min-height: 100%;
   }
