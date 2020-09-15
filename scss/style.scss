@@ -27,6 +27,7 @@
       }
       @include phone() {
         font-size: 1.3rem;
+        margin-bottom: 2rem;
       }
 
       @include m355() {
@@ -215,4 +216,19 @@ header {
 
 .fa-heart {
   color: #ff0000;
+}
+
+// Footer
+footer {
+  text-align: center;
+  padding: 10px 0px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  @include tab() {
+    position: unset;
+    transform: unset;
+    margin-top: 80px;
+  }
 }
