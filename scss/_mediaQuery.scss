@@ -1,0 +1,16 @@
+// * Media Queries
+@mixin phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin m355 {
+  @media screen and (max-width: 355px) {
+    @content;
+  }
+}

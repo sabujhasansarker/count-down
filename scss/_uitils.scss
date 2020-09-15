@@ -31,7 +31,12 @@ a {
 .middle {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @include tab() {
+    position: unset;
+    transform: unset;
+    padding-top: 15%;
+  }
 }
