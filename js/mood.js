@@ -8,20 +8,20 @@ const moodChanger = (mood) => {
     setProperty("--overlay", "#00000052");
     setProperty("--countBg", "#24272adb");
     setProperty("--countBorder", " #1b1b1b87");
-    setProperty("--day", "red");
-    setProperty("--hours", "green");
-    setProperty("--min", "aquamarine");
-    setProperty("--sec", "whitesmoke");
+    setProperty("--day", "#E18A07");
+    setProperty("--hours", "#3A67F5");
+    setProperty("--min", "#3D72A4");
+    setProperty("--sec", "#CCCCCC");
     setProperty("--color", "white");
-    setProperty("--bg", "white");
+    setProperty("--bg", "black");
   } else {
-    setProperty("--overlay", "#ffffff6b");
-    setProperty("--countBg", "#f5f5f580");
+    setProperty("--overlay", "#ffffff3b");
+    setProperty("--countBg", "#f5f5f5e6");
     setProperty("--countBorder", " #1b1b1b87");
-    setProperty("--day", "red");
-    setProperty("--hours", "green");
-    setProperty("--min", "aquamarine");
-    setProperty("--sec", "whitesmoke");
+    setProperty("--day", "#336699");
+    setProperty("--hours", "#3399FF");
+    setProperty("--min", "#3366CC");
+    setProperty("--sec", "#333333");
     setProperty("--color", "black");
     setProperty("--bg", "white");
     getElement(".body-container").style.backgroundImage = `url(

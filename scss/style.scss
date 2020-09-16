@@ -12,7 +12,7 @@
   color: $color;
   .overlay {
     background: $overlay;
-    height: 100vh;
+    min-height: 100vh;
   }
   @include tab() {
     min-height: 100%;
@@ -116,11 +116,14 @@
 // nav
 header {
   nav {
-    .logo {
-      font-size: 1.3rem;
-    }
     @include flex();
     justify-content: space-between;
+    padding-top: 15px;
+    .logo {
+      font-size: 1.3rem;
+      border: 2px solid;
+      padding: 5px 20px;
+    }
     ul {
       @include flex();
       li {
