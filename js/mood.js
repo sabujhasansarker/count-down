@@ -3,7 +3,7 @@ var themeSwitch = getElement("#toggle-checkbox");
 const moodChanger = (mood) => {
   if (mood === "night") {
     getElement(".body-container").style.backgroundImage = `url(
-      "https://bit.ly/32sX6eB"
+      "../images/night.jpeg"
     )`;
     setProperty("--overlay", "#00000052");
     setProperty("--countBg", "#24272adb");
@@ -25,7 +25,7 @@ const moodChanger = (mood) => {
     setProperty("--color", "black");
     setProperty("--bg", "white");
     getElement(".body-container").style.backgroundImage = `url(
-      "https://bit.ly/35Bipg9"
+      "../images/day.jpeg"
     )`;
   }
 };
