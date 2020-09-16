@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Countdown</title>
+  </head>
+  <body>
+    <div class="preloader show">
+      <div class="preloader_inner">0%</div>
+    </div>
+
+    <div class="body-container">
+      <div class="overlay">
+        <div class="container">
+          <header>
+            <nav>
+              <div class="logo">Sumu</div>
+              <ul>
+                <li>
+                  <a href="" target="_blank" rel="noopener noreferrer"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" target="_blank" rel="noopener noreferrer"
+                    ><i class="fab fa-facebook-square"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" target="_blank" rel="noopener noreferrer"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" target="_blank" rel="noopener noreferrer"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="checkbox">
+                  <label class="darkmode-toggle" for="toggle-checkbox">
+                    <span class="visually-hidden">Enable dark mode</span>
+                    <input type="checkbox" id="toggle-checkbox" />
+                    <span class="toggle-slider" aria-hidden="true"></span>
+                  </label>
+                  <!-- <label for="checkbox" class="theme-switch"></label>
+                <p class="theme-switch-toggle">
+                  <span class="day">🌜</span>
+                  <span class="night">🌞</span>
+                </p> -->
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <div class="middle">
+            <div class="heading-text">
+              <h1>Coming Soon . . .</h1>
+              <p>We are building something new</p>
+            </div>
+            <ul class="count">
+              <li>
+                <span id="days" class="number"></span
+                ><span class="name">days</span>
+              </li>
+              <li>
+                <span id="hours" class="number"></span
+                ><span class="name">Hours</span>
+              </li>
+              <li>
+                <span id="minutes" class="number"></span
+                ><span class="name">Minutes</span>
+              </li>
+              <li>
+                <span id="seconds" class="number"></span
+                ><span class="name">Seconds</span>
+              </li>
+            </ul>
+            <div class="button-container"></div>
+          </div>
+
+          <footer>
+            <p>Made by <i class="fas fa-heart"></i> Candy Crab</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/countDown.js"></script>
+    <script src="./js/mood.js"></script>
+    <script src="./js/loader.js"></script>
+  </body>
+</html>

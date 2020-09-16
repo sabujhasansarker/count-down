@@ -1,0 +1,32 @@
+:root {
+  --gunmetal-85: hsla(212, 14%, 85%, 1);
+  --gunmetal-75: hsla(212, 14%, 75%, 1);
+  --sky-blue-75: hsla(201, 80%, 75%, 1);
+  --sky-blue-60: hsla(201, 80%, 60%, 1);
+  --overlay: #f8c10b;
+  --countBg: #24272adb;
+  --countBorder: #1b1b1b87;
+  // --countText: black;
+  --day: #e18a07;
+  --hours: #3a67f5;
+  --min: #3d72a4;
+  --sec: #cccccc;
+
+  --bg: #1d1d1d;
+  --color: white;
+}
+
+$overlay: var(--overlay);
+$countBg: var(--countBg);
+$countBorder: var(--countBorder);
+// $countText: var(--countText);
+$day: var(--day);
+$hours: var(--hours);
+$min: var(--min);
+$sec: var(--sec);
+
+$bg: var(--bg);
+$color: var(--color);
+
+// font
+$font: "Poppins", sans-serif;
